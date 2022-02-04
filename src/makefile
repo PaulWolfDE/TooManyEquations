@@ -1,8 +1,15 @@
 CC=gcc
-CFLAGS= # l-lm
-SOURCES=GaussianElimination.c Libtest.c Movement.c PeriodicFractionSolver.c StringEvaluation.c TextAssignments.c Utils.c
+CFLAGS=
+
+OBJECTS = GaussianElimination.o Libtest.o Movement.o PeriodicFractionSolver.o StringEvaluation.o TextAssignments.o Utils.o
 
 all: TooManyEquations
+	
+TooManyEquations: $(OBJECTS)
+		$(CC) -o $@ $(OBJECTS)
 
-TooManyEquations: $(SOURCES)
-	$(CC) -o TooManyEquations $(SOURCES) $(CFLAGS)
+$(OBJECTS): %.o: %.c
+	        $(CC) -c $(CFLAGS) $< -o $@
+
+clean:
+	rm -f *.o *.exe
