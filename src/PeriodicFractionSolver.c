@@ -53,7 +53,7 @@ char* pfsSolve(char input[])
 
 	static char r[MAX_ARR];
 
-	snprintf(r, sizeof(r), "%I32d / %.0I32d\n", r1 / greatesCommonDivisor,
+	snprintf(r, sizeof(r), "%ld / %.0ld\n", r1 / greatesCommonDivisor,
 			r2 / greatesCommonDivisor);
 
 	return r;
