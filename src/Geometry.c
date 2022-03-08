@@ -1,3 +1,12 @@
+/**
+ * Geometry.c - C-Quelldatei
+ * ------------------------------------
+ * Enthaelt geometrische Loesungsformeln.
+ * 
+ * Erstellt in C.
+ * Paul Wolf, Maerz 2022
+ */
+
 #include <math.h>
 #include <stdio.h>
 
