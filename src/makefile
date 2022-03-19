@@ -6,7 +6,7 @@ OBJECTS = GaussianElimination.o Libtest.o Movement.o PeriodicFractionSolver.o St
 all: TooManyEquations
 	
 TooManyEquations: $(OBJECTS)
-		$(CC) -o $@ $(OBJECTS)
+		$(CC) -o $@ $(OBJECTS) -lm
 
 $(OBJECTS): %.o: %.c
 	        $(CC) -c $(CFLAGS) $< -o $@
