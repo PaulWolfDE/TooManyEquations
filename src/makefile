@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=
+CFLAGS= #
 
-OBJECTS = GaussianElimination.o Libtest.o Movement.o PeriodicFractionSolver.o StringEvaluation.o TextAssignments.o Utils.o
+OBJECTS = GaussianElimination.o Libtest.o Movement.o PeriodicFractionSolver.o StringEvaluation.o TextAssignments.o Utils.o Geometry.o
 
 all: TooManyEquations
 	
