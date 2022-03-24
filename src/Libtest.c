@@ -81,7 +81,7 @@ int main(void)
 
 	int *taL = taLegs(4, 8, 105, 632);
 	printf("105 Elefanten und Spinnen haben zusammen 632 Beine.\n"
-		"--> %d Elefanten, %d Spinenn, %d Beine von den Elefanten, "
+		"--> %d Elefanten, %d Spinnen, %d Beine von den Elefanten, "
 		"%d Beine von den Spinnen.\n\n", taL[0], taL[1], taL[2], taL[3]);
 
 	double *taAi = taAcid(100, 20, 43, 61);

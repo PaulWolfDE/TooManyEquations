@@ -109,7 +109,7 @@ void lsoeElimination(double **part, int matrixc, int index)
 	// Das kleinste gemeinsame Vielfache der zwei Werte an der zu eliminierenden Position wird ermittelt.
 	int leastCommonMultiply = abs(lcm(part[0][index], part[1][index]));
 	// Der Faktor, um das kleinste gemeinsame Vielfache der ersten Zeile zu erreichen, wird gespeichert.
-	double factor = leastCommonMultiply / abs(part[0][index]);
+	double factor = leastCommonMultiply / fabs(part[0][index]);
 
 	// Der zu eliminierende Index der unteren Zeile des Gleichungssystems sollte negativ sein.
 	if (part[0][index] > 0)
@@ -120,7 +120,7 @@ void lsoeElimination(double **part, int matrixc, int index)
 			part[0][i] *= factor;
 
 	// Der Faktor, um das kleinste gemeinsame Vielfache der zweiten Zeile zu erreichen, wird gespeichert.
-	factor = leastCommonMultiply / abs(part[1][index]);
+	factor = leastCommonMultiply / fabs(part[1][index]);
 
 	// Der zu eliminierende Index der oberen Zeile des Gleichungssystems sollte positiv sein.
 	if (part[1][index] < 0)
