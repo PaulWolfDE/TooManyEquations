@@ -49,3 +49,23 @@ double getSphereSurface(double radius)
 {
     return 4 * M_PI * pow(radius, 2);
 }
+
+double lawOfSinesLength(double alpha, double beta, double a)
+{
+    return a / sin(alpha) * sin(beta);
+}
+
+double lawOfSinesAngle(double alpha, double a, double b)
+{
+    return sin(alpha) / a * b;
+}
+
+double lawOfCosinesLength(double alpha, double b, double c)
+{
+    return sqrt(pow(b,2) + pow(c,2) - 2*b*c * cos(alpha));
+}
+
+double lawOfCosinesAngle(double a, double b, double c)
+{
+    return acos((pow(a,2) - pow(b,2) - pow(c, 2)) / (-2*b*c));
+}

@@ -167,12 +167,18 @@ int main(void)
     double radius = 4.5, height = 24.3;
     // Calculating the surface from a circular cone.
     double surface = getCircularConeSurface(radius, height);
+
+    double a = 52.41, b = 41.3, c = 83.81;
+    // Calculating angle alpha with the law of cosines.
+    double alpha = lawOfCosines(a, b, c);
+
     return 0;
 }
 ```
 
 ### Important Details
 Other functions can be derivated from this implementation with ease.
+Alternatively they can be found in the Geometry header file.
 
 ## Schaeferhoff's text tasks
 > Check header files for implementations.

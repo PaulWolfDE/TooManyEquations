@@ -16,6 +16,7 @@
 #include "PeriodicFractionSolver.h"
 #include "TextAssignments.h"
 #include "Movement.h"
+#include "Geometry.h"
 
 #define NUMBER_OF_RESULTS 4
 
@@ -23,6 +24,10 @@ int main(void)
 {
 	// Number of results equal to the rows of the linear system of equations.
 	
+    printf("%.2lf\n", lawOfCosinesLength(5, 6, 7));
+    printf("%.2lf\n", lawOfCosinesAngle(5, 6, 7));
+    printf("%.2lf\n", lawOfSinesLength(5, 6, 7));
+    printf("%.2lf\n", lawOfSinesAngle(5, 6, 7));
 
 	// Example matrix entered as 4 strings.
 	char stringMatrix[NUMBER_OF_RESULTS][256] =

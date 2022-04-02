@@ -60,4 +60,60 @@ double getCircularCylinderSurface(double, double);
 double getSphereCapacity(double);
 double getSphereSurface(double);
 
+/**
+ * Berechnung des Sinussatzes.
+ * 
+ * Berechnung einer Seitenlaenge in einem
+ * beliebigen Dreieck mit dem Sinussatz.
+ *
+ * @param   Winkel Alpha
+ * @param   Winkel Beta
+ * @param   Seitenlaenge a
+ *
+ * @return  Seitenlaenge b 
+ */
+double lawOfSinesLength(double, double, double);
+
+/**
+ * Berechnung des Sinussatzes.
+ * 
+ * Berechnung eines Winkels in einem
+ * beliebigen Dreieck mit dem Sinussatz.
+ *
+ * @param   Winkel Alpha
+ * @param   Seitenlaenge a
+ * @param   Seitenlaenge b
+ *
+ * @return  Winkel Beta
+ */
+double lawOfSinesAngle(double, double, double);
+
+/**
+ * Berechnung des Kosinussatzes.
+ * 
+ * Berechnung einer Seitenlaenge in einem
+ * beliebigen Dreieck mit dem Kosinussatz.
+ *
+ * @param   Winkel Alpha
+ * @param   Seitenlaenge b
+ * @param   Seitenlaenge c
+ *
+ * @return  Seitenlaenge a
+ */
+double lawOfCosinesLength(double, double, double);
+
+/**
+ * Berechnung des Kosinussatzes.
+ * 
+ * Berechnung eines Winkels in einem
+ * beliebigen Dreieck mit dem Kosinussatz.
+ *
+ * @param   Seitenlaenge a
+ * @param   Seitenlaenge b
+ * @param   Seitenlaenge c
+ *
+ * @return  Winkel Alpha
+ */
+double lawOfCosinesAngle(double, double, double);
+
 #endif /* GEOMETRY_H_ */
