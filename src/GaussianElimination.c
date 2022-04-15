@@ -8,9 +8,6 @@
  */
 
 #include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
 #include "Utils.h"
 
 #define MAX_STRING 256

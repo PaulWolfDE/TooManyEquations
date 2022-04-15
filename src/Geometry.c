@@ -8,7 +8,6 @@
  */
 
 #include <math.h>
-#include <stdio.h>
 
 double getCircularConeCapacity(double radius, double height)
 {

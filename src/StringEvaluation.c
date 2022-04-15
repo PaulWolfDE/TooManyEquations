@@ -10,7 +10,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 #define ALPHABET_LENGTH 26
 #define MAX_ASCII 128
