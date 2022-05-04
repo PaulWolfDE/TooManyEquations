@@ -37,12 +37,13 @@ char* pfsSolve(char input[])
 	double a = strtod(strtok(input, del), NULL);	// Dezimalzahl
 	int b = strtol(perVal, NULL, 10);				// Periode
 
+	strtok(intVal, del2);
 	split2 = strtok(NULL, del2);
 	char *decVal = split2;
 	perVal[strlen(perVal) - 1] = '\0';
 
-	int a2 = intVal[strlen(intVal) - 1] == '.' ? 0 : strlen(decVal);// Nachkommastellen
-	int b2 = strlen(perVal);								// Periodenstellen
+	int a2 = intVal[strlen(intVal) - 1] == '.' ? 0 : strlen(decVal);	// Nachkommastellen
+	int b2 = strlen(perVal);											// Periodenstellen
 
 	long int r1 = a * pow(10, a2) * (pow(10, b2) - 1);
 	long int r2 = (long int) ((pow(10, b2) - 1) * pow(10, a2));
