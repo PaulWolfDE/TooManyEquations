@@ -12,4 +12,4 @@ $(OBJECTS): %.o: %.c
 	        $(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm -f *.o *.exe
+	rm -f *.o TooManyEquations
