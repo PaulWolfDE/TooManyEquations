@@ -172,6 +172,8 @@ int main(void)
     // Calculating angle alpha with the law of cosines.
     double alpha = lawOfCosines(a, b, c);
 
+    double alphaInDegrees = radiansToDegrees(lawOfCosines(a, b, c));
+
     return 0;
 }
 ```
