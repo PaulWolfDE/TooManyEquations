@@ -56,7 +56,7 @@ double lawOfSinesLength(double alpha, double beta, double a)
 
 double lawOfSinesAngle(double alpha, double a, double b)
 {
-    return sin(alpha) / a * b;
+    return asin(sin(alpha) / a * b);
 }
 
 double lawOfCosinesLength(double alpha, double b, double c)
@@ -67,4 +67,14 @@ double lawOfCosinesLength(double alpha, double b, double c)
 double lawOfCosinesAngle(double a, double b, double c)
 {
     return acos((pow(a,2) - pow(b,2) - pow(c, 2)) / (-2*b*c));
+}
+
+double degreesToRadians(double degrees)
+{
+    return degrees * M_PI / 180;
+}
+
+double radiansToDegrees(double radians)
+{
+    return radians / M_PI * 180;
 }

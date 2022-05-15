@@ -116,4 +116,22 @@ double lawOfCosinesLength(double, double, double);
  */
 double lawOfCosinesAngle(double, double, double);
 
+/**
+ * Umwandlung von Grad zu Bogenmass.
+ *
+ * @param   Winkel in Grad
+ *
+ * @return  Winkel in Bogenmass
+ */
+double degreesToRadians(double);
+
+/**
+ * Umwandlung von Bogenmass zu Grad.
+ *
+ * @param   Winkel in Bogenmass
+ *
+ * @return  Winkel in Grad
+ */
+double radiansToDegrees(double);
+
 #endif /* GEOMETRY_H_ */

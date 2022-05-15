@@ -7,6 +7,7 @@
  * Paul Wolf, Januar 2022
  */
 
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -24,11 +25,6 @@ int main(void)
 {
 	// Number of results equal to the rows of the linear system of equations.
 	
-    printf("%.2lf\n", lawOfCosinesLength(5, 6, 7));
-    printf("%.2lf\n", lawOfCosinesAngle(5, 6, 7));
-    printf("%.2lf\n", lawOfSinesLength(5, 6, 7));
-    printf("%.2lf\n", lawOfSinesAngle(5, 6, 7));
-
 	// Example matrix entered as 4 strings.
 	char stringMatrix[NUMBER_OF_RESULTS][256] =
 	{ "3x + 4y -5z + 6a = 39", 
@@ -101,5 +97,13 @@ int main(void)
 		" Heute kostet ein Liter %.2fEUR.\n--> Gestern kostete ein "
 		"Liter %.2fEUR.\n--> Heute hat Uwe %.2fl getankt.\n--> Gestern "
 		"tankte er %.2fl.\n\n", taG[0], taG[1], taG[2], taG[3]);
+    
+    double degrees = 180;
+    printf("%f° = %f rad\n", degrees, degreesToRadians(degrees));
+
+    double radian = M_PI;
+    printf("%f rad = %f°\n", radian, radiansToDegrees(radian));
+
+    printf("%f\n", radiansToDegrees(lawOfSinesAngle(degreesToRadians(50), 7, 5)));
 }
 
