@@ -100,10 +100,11 @@ int main(void)
     
     double degrees = 180;
     printf("%f° = %f rad\n", degrees, degreesToRadians(degrees));
-
     double radian = M_PI;
     printf("%f rad = %f°\n", radian, radiansToDegrees(radian));
 
-    printf("%f\n", radiansToDegrees(lawOfSinesAngle(degreesToRadians(50), 7, 5)));
+    printf("Law of sines: %f\n", radiansToDegrees(lawOfSinesAngle(degreesToRadians(50), 7, 5)));
+    
+    printf("Triangle area: %f\n", getTriangleArea(degreesToRadians(50), 10, 5));
 }
 

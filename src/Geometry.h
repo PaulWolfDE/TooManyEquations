@@ -117,6 +117,21 @@ double lawOfCosinesLength(double, double, double);
 double lawOfCosinesAngle(double, double, double);
 
 /**
+ * Berechnung des Flaecheninhalts eines Dreiecks.
+ *
+ * Berechnungsformel fuer den Flaecheninhalt in einem
+ * beliebigen Dreieck durch einen von zwei Seiten
+ * eingeschlossenen Winkel.
+ *
+ * @param   Winkel Alpha
+ * @param   Seitenlaenge b
+ * @param   Seitenlaenge c
+ *
+ * @return  Flaecheninhalt A
+ */
+double getTriangleArea(double, double, double);
+
+/**
  * Umwandlung von Grad zu Bogenmass.
  *
  * @param   Winkel in Grad

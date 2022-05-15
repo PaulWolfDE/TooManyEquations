@@ -69,6 +69,11 @@ double lawOfCosinesAngle(double a, double b, double c)
     return acos((pow(a,2) - pow(b,2) - pow(c, 2)) / (-2*b*c));
 }
 
+double getTriangleArea(double alpha, double b, double c) 
+{
+    return 0.5 * b * c * sin(alpha);
+}
+
 double degreesToRadians(double degrees)
 {
     return degrees * M_PI / 180;
