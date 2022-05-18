@@ -109,5 +109,11 @@ int main(void)
     Sphere s = {0, 0, 0, 187, 0, 0};
     calculateSphere(&s);
     printSphere(s);
+
+    printf("\n");
+
+    Triangle t = {0, 2, 3, 0, 0, 0, 8, 18};
+    calculateTriangle(&t);
+    printTriangle(t);
 }
 

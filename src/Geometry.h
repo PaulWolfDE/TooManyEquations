@@ -23,6 +23,21 @@ typedef struct
 void calculateSphere(Sphere*);
 void printSphere(Sphere);
 
+typedef struct
+{
+    double a;
+    double b;
+    double c;
+    double alpha;
+    double beta;
+    double gamma;
+    double perimeter;
+    double area;
+} Triangle;
+
+void calculateTriangle(Triangle*);
+void printTriangle(Triangle);
+
 /**
  * Berechnungen mit Kreiskegeln.
  * 
