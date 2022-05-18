@@ -104,7 +104,10 @@ int main(void)
     printf("%f rad = %f°\n", radian, radiansToDegrees(radian));
 
     printf("Law of sines: %f\n", radiansToDegrees(lawOfSinesAngle(degreesToRadians(50), 7, 5)));
-    
-    printf("Triangle area: %f\n", getTriangleArea(degreesToRadians(50), 10, 5));
+    printf("Triangle area: %f\n\n", getTriangleArea(degreesToRadians(50), 10, 5));
+
+    Sphere s = {0, 0, 0, 187, 0, 0};
+    calculateSphere(&s);
+    printSphere(s);
 }
 

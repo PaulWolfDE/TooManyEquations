@@ -10,6 +10,19 @@
 #ifndef GEOMETRY_H_
 #define GEOMETRY_H_
 
+typedef struct
+{
+    double radius;
+    double diameter;
+    double circumference;
+    double circleArea;
+    double surfaceArea;
+    double volume;
+} Sphere;
+
+void calculateSphere(Sphere*);
+void printSphere(Sphere);
+
 /**
  * Berechnungen mit Kreiskegeln.
  * 
